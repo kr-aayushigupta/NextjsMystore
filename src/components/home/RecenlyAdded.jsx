@@ -9,11 +9,11 @@ function RecenlyAdded() {
 
   const getProducts = async () => {
     const response = await fetch(
-      "https://fakestoreapi.in/api/products?limit=5"
+      "https://fakestoreapi.com/products?limit=5"
     );
     const data = await response.json();
     console.log(data);
-    setProduct(data.products)
+    setProduct(data)
   }
 
   useEffect(() => {

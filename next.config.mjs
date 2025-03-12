@@ -6,7 +6,11 @@ const nextConfig = {
         {
             protocol: 'https',
             hostname: 'storage.googleapis.com',
-        }
+        },
+        {
+            protocol: 'https',
+            hostname: 'fakestoreapi.com', // <-- Add this line to allow images from fakestoreapi.com
+          },
         ]
     }
 };

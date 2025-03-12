@@ -10,7 +10,7 @@ function HeroSection() {
           <h1>
             One stop solution <span className="text-pink-500">MYSTORE</span>
           </h1>
-          <p>Discover the latest Headphones,Earphones,mobiles,tablets etc</p>
+          <p>Discover the latest Trends and Technology Gadgets at one platform</p>
           <p>Exclusive deals just for you!!</p>
           <button className={styles.ctaButton}>Shop Now</button>
         </div>

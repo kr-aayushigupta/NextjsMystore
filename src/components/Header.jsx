@@ -1,10 +1,15 @@
+
 import React from 'react'
 import styles from "@/styles/header.module.css"
 import Container from './Container'
 import {FiSearch, FiShoppingCart} from 'react-icons/fi';
 import Link from 'next/link';
 
+
+
 function Header() {
+
+  
   return (
     <header className={`${styles.header} py-3 px-1 shadow`}>
         <Container className="flex justify-between">
@@ -29,6 +34,11 @@ function Header() {
                 </button>
             </div>
 
+           
+       
+       
+        
+
             {/* Navbar */}
 
             <NavBar/>
@@ -51,7 +61,7 @@ const NavBar=()=>{
            
           </li>
           <li className={`${styles.navLink} text-black`}>
-            <Link href="store">Store</Link>
+            <Link href="/store">Store</Link>
           </li>
         </ul>
 

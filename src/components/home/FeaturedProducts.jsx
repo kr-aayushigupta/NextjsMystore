@@ -2,9 +2,10 @@ import React from 'react'
 
 import Container from '../Container'
 import ProductBox from '../ProductBox';
+
 async function FeaturedProducts() {
 
-  const response=await fetch("https://fakestoreapi.in/api/products?limit=5")
+  const response=await fetch("https://fakestoreapi.com/products?limit=5")
 
   const data=await response.json();
 
@@ -19,7 +20,7 @@ async function FeaturedProducts() {
         <div className="grid grid-cols-5 gap-2">
           {/* <ProductBox></ProductBox> */}
 
-          {data.products.map((prod) => {
+          {data.map((prod) => {
             return <ProductBox product={prod} key={prod.id} />;
           })}
         </div>
